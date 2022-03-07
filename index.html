@@ -1,40 +1,459 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
-	<head>
-		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
+    />
+    <title>reveal.js</title>
+    <link rel="stylesheet" href="dist/reset.css" />
+    <link rel="stylesheet" href="dist/reveal.css" />
+    <link rel="stylesheet" href="dist/theme/black.css" />
+    <!-- Theme used for syntax highlighted code -->
+    <link rel="stylesheet" href="plugin/highlight/monokai.css" />
+  </head>
+  <body>
+    <div class="reveal">
+      <div class="slides">
+        <section>
+          <h2>ECMAScript e JavaScript</h2>
+          <p>O que é a ECMA e qual a diferença entre ECMAScript e JavaScript?</p>
+        </section>
+        <section>
+          <p>Vamos voltar na origem da linguagem</p>
+        </section>
+        <section>
+          <section id="fragments">
+            <h2>1995</h2>
+            <p>Netscape</p>
+            <p class="fragment">Nessa época o era HTML era muito ingessado</p>
+            <p>
+              <span class="fragment">a empresa estudava como resolver isso</span>
+            </p>
+          </section>
+          <section>
+            <p>No mesmo ano</p>
+            <p>Houve a contratação de Brendan Eich</p>
+            <p>
+            <span class="fragment">Que desenvolveu o MOCHA</span>
+          </p>
+          </section>
+          <section>
+            <p>O MOCHA</p>
+            <span class="fragment">Mudou o nome para</span>
+            <span class="fragment">Livescript</span>
+            <span class="fragment">e depois para
+              <span class="fragment highlight-blue">JavaScript</span>
+            </span>
+          </p>
+          </section>
+          <section>
+            <p>18 de setembro de 1995</p>
+            <p>Houve o lançamento do Netscape 2.0</p>
+            <p>
+            <span class="fragment">Este incluia a <span class="fragment highlight-blue">nova tecnologia</span></span>
+            <span class="fragment">e levanta a questão de como <span class="fragment highlight-red">uniformizar</span> a nova tecnologia nos navegadores</span>
+            </p>
+          </section>
+        </section>
+        <section>
+          <section>
+            <h2>1997</h2>
+            <p>Para continuar evoluindo a linguagem, era preciso participação de todas as grandes empresas</p>
+            <p class="fragment">e também para uma integração universal</p>
+            <p>
+              <span class="fragment">assim foi dada submissão aos padrões ECMA</span>
+            </p>
+          </section>
+          <section>
+            <p>ECMA</p>
+            <span class="fragment">Ou European Computer Manufacturers Association, </span>
+            <span class="fragment">é uma associação que padroniza o segmento.</span>
+            <span class="fragment">Na época apenas o nome continha "europeu" pois já era de consenso internacional</span>
+            <span class="fragment">e a Netscape incorporou aos padrões ECMA ao 
+              <span class="fragment highlight-blue">JavaScript</span>
+            </span>
+          </p>
+          </section>
+          <section>
+            <p>ECMAScript</p>
+            <p>O nome da linguagem padronizada.</p>
+            <span class="fragment">O JavaScript é uma linguagem que é atualizada constantemente</span>
+            <span class="fragment">e esta obedece as atualizações padrões  que foram uniformizadas pelo ECMAScript</span>
+          </section>
+          <section>
+            <p>Apenas pra confundir</p>
+            <p>o ovo ou a galinha</p>
+            <p>
+            <span class="fragment">ECMASCript sendo a base do <span class="fragment highlight-blue">JavaScript</span></span>
+            <span class="fragment">e ou JavaScript a base do <span class="fragment highlight-red">ECMAScript</span></span>
+            </p>
+          </section>
+          <section>
+            <p>Ainda em 1997</p>
+            <span class="fragment">O padrão ECMAScript 1 foi lançado,</span>
+            <span class="fragment">com os mesmos padrões já tidos pelo Brendan (criador), </span>
+            <span class="fragment">e logo depois o ECMASript 2,</span>
+            <span class="fragment">para seguir padrões internacionais da 
+              <span class="fragment highlight-blue">ISO/IEC 16262</span>
+            </span>
+          </p>
+          </section>
+        </section>
+        <section>
+          <section id="fragments">
+            <h2>1999</h2>
+            <p>ECMASCript 3</p>
+          </section>
+          <section id="fragments">
+            <h2>ECMASCript 3</h2>
+            <p>Neste lançamento houve algumas melhorias importantes: </p>
+            <span class="fragment">emplementação de laços do-while,</span>
+            <span class="fragment">tratamento de exceções,</span>
+            <span class="fragment">e outros recursos.</span>
+          </section>
+        </section>
+        <section>
+          <section id="fragments">
+            <h2>2008</h2>
+            <p>ECMASCript 4</p>
+          </section>
+          <section id="fragments">
+            <h2>ECMASCript 4</h2>
+            <p>Esta atualização traria muitas mudanças em relação a anterior, </p>
+            <span class="fragment">isto a tornaria muito disruptiva,</span>
+            <span class="fragment">devido a isso e falta de consenso,</span>
+            <span class="fragment">esta versão foi descontinuada. :*(</span>
+          </section>
+        </section>
+        <section>
+          <section id="fragments">
+            <h2>2012</h2>
+            <p>ECMASCript 5</p>
+          </section>
+          <section id="fragments">
+            <h2>ECMASCript 5</h2>
+            <p>Após o abandono da versão anterior esta veio com vários recursos novos: </p>
+            <span class="fragment">manipulação avançada de arrays,</span>
+            <span class="fragment">suporte json,</span>
+            <span class="fragment">getters e setters,</span>
+            <span class="fragment">entre outros.</span>
+          </section>
+        </section>
+        <section>
+          <section id="fragments">
+            <h2>2015</h2>
+            <p>ECMASCript 6</p>
+          </section>
+          <section id="fragments">
+            <h2>ECMASCript 6</h2>
+            <p>Trouxe recursos mais avançados:</p>
+            <span class="fragment"> const e let,</span>
+            <span class="fragment"> arrow functions,</span>
+            <span class="fragment"> reflection,</span>
+            <span class="fragment"> collections,</span>
+            <span class="fragment"> binary data,</span>
+            <span class="fragment"> entre outros.</span>
+          </section>
+          <section id="fragments">
+            <h2>Menções honrosas</h2>
+            <p>Defalt Parameters</p>
+            <pre><code class="javascript" data-trim contenteditable style="font-size: 18px;">
+              function funcaoBolada(num=0) {
+                console.log(num)
+              }
+              funcaoBolada();
+                        </code></pre>
+          </section>
+          <section id="fragments">
+            <h2>Menções honrosas</h2>
+            <p>Templete Strings</p>
+            <pre><code class="javascript" data-trim contenteditable style="font-size: 18px;">
+`texto`
+`texto linha 2`
+`texto linha 3`
+`texto ${variavel} linha 4`
+                        </code></pre>
+          </section>
+          <section id="fragments">
+            <h2>Menções honrosas</h2>
+            <p>Destructuring</p>
+            <pre><code class="javascript" data-trim contenteditable style="font-size: 18px;">
+              let a, b, rest;
+              [a, b] = [10, 20];
+              console.log(a); // 10
+              console.log(b); // 20
+              
+              [a, b, ...rest] = [10, 20, 30, 40, 50];
+              console.log(a); // 10
+              console.log(b); // 20
+              console.log(rest); // [30, 40, 50]
+              
+              ({ a, b } = { a: 10, b: 20 });
+              console.log(a); // 10
+              console.log(b); // 20
+              
+              // Stage 4(finished) proposal
+              ({a, b, ...rest} = {a: 10, b: 20, c: 30, d: 40});
+              console.log(a); // 10
+              console.log(b); // 20
+              console.log(rest); // {c: 30, d: 40}
+              
+                        </code></pre>
+          </section>
+        </section>
+        <section>
+          <section id="fragments">
+            <h2>2016</h2>
+            <p>ECMASCript 7</p>
+          </section>
+          <section id="fragments">
+            <h2>ECMASCript 7</h2>
+            <p>Trouxe alguns recursos importantes como:</p>
+            <span class="fragment"> operadores exponenciais.</span>
+            <span class="fragment"> array.prototypes,</span>
+            <span class="fragment"> e algumas outras correções.</span>
+          </section>
+        </section>
+        <section>
+          <section id="fragments">
+            <h2>2017</h2>
+            <p>ECMASCript 8</p>
+          </section>
+          <section id="fragments">
+            <h2>ECMASCript 8</h2>
+            <p>Trouxe recursos importantes como:</p>
+            <span class="fragment"> funções assincronas,</span>
+            <span class="fragment"> object.values,</span>
+            <span class="fragment"> object.entries,</span>
+            <span class="fragment"> e outros.</span>
+          </section>
+        </section>
+        <section>
+          <section id="fragments">
+            <h2>2018</h2>
+            <p>ECMASCript 9</p>
+          </section>
+          <section id="fragments">
+            <h2>ECMASCript 9</h2>
+            <p>Trouxe recursos como:</p>
+            <span class="fragment"> spread operator,</span>
+            <span class="fragment"> rest parameters,</span>
+            <span class="fragment"> iteração assincrona,</span>
+            <span class="fragment"> entre outros.</span>
+          </section>
+        </section>
+        <section>
+          <section id="fragments">
+            <h2>2019,2020,2021</h2>
+            <p>ECMASCript 10,11,12 e ES.Next</p>
+          </section>
+          <section id="fragments">
+            <h2>Os ultimos ECMASCript's</h2>
+            <p>Trouxe recursos como:</p>
+            <span class="fragment"> mais recursos em arrays,</span>
+            <span class="fragment"> BigInt,</span>
+            <span class="fragment"> Array.prototype.sort mais preciso,</span>
+            <span class="fragment"> entre outros.</span>
+          </section>
+          <section id="fragments">
+            <h2>ES.Next</h2>
+            <p>Como existem várias atualizações</p>
+            <span class="fragment"> sempre que quiser se referir a ultima,</span>
+            <span class="fragment"> o nome ES.Next refere-se sempre ao ECMASCript mais atual.</span>
+          </section>
+        </section>
+        <section>
+          <section id="fragments">
+            <h2>RECURSOS IMPORTANTES/h2>
+            <p>ECMASCript 10,11,12 e ES.Next</p>
+          </section>
+          <section id="fragments">
+            <h2>Os ultimos ECMASCript's</h2>
+            <p>Trouxe recursos como:</p>
+            <span class="fragment"> mais recursos em arrays,</span>
+            <span class="fragment"> BigInt,</span>
+            <span class="fragment"> Array.prototype.sort mais preciso,</span>
+            <span class="fragment"> entre outros.</span>
+          </section>
+          <section id="fragments">
+            <h2>ES.Next</h2>
+            <p>Como existem várias atualizações</p>
+            <span class="fragment"> sempre que quiser se referir a ultima,</span>
+            <span class="fragment"> o nome ES.Next refere-se sempre ao ECMASCript mais atual.</span>
+          </section>
+        </section>
+        <section>
+          <section id="fragment">
+            <p>Questões a serem abordadas</p>
+          </section>
+        </section>
+        <section>
+          <section id="fragment">
+            <p>O que é strict mode?</p>
+          </section>
+          <section id="fragment">
+            <h2>Strict Mode</h2>
+            <p>Muitas vezes em um código nós erramos na execução e ele não acusa o erro, e continua rodando normalmente.</p>
+            <span class="fragment"> E isso não é interessante para nós pois pode gerar um erro num outro local que nem saberiamos</span>
+          </section>
+          <h2>Strict Mode</h2>
+            <p>Usando "use strict"</p>
+            <span class="fragment"> colocando "use strict" no começo do nosso arquivo, este modo ativara recurso de falhas adicionais, como declarações faltantes, mudar variaveis de leitura e outros.</span>
+          </section>
+          <section id="fragment">
+            <h2>Strict Mode</h2>
+            <p>exemplos</p>
+            <pre><code class="javascript" data-trim contenteditable style="font-size: 18px;">
+            function imprimeNome() {
+              nome = "rafael"
+              console.log(nome)
+            }
+            imprimeNome()
 
-		<title>reveal.js</title>
+            window.nome
+                        </code></pre>
+          </section>
+          <section id="fragment">
+            <pre><code class="javascript" data-trim contenteditable style="font-size: 18px;">
+              const = soma(a,a,c) {
+                return a + a + c;
+              }
+              console.log(soma(1,2,3))
+                          </code></pre>
+          </section>
+        </section>
+        <section>
+          <section id="fragment">
+            <p>O que é *Hoisting*?</p>
+          </section>
+          <section id="fragment">
+            <h2>Hoisting</h2>
+            <p>Esta é uma propriedade do JavaScript, em que as funções são içadas para o inicio do código</p>
+            <span class="fragment">e as constantes do tipo var, são içadas para o inicio da função (se dentro de uma), ou para o inicio do código (se fora).</span>
+          </section>
+          <section id="fragment">
+            <h2>Hoisting</h2>
+            <p>exemplos:</p>
+            <pre><code class="javascript" data-trim contenteditable style="font-size: 18px;">
+              console.log(meuNome);
+              var meuNome= 'joao';
+                          </code></pre>
+            <span class="fragment">voltará undefined</span>
+          </section>
+        </section>
+        <section>
+          <section id="fragmet">
+            <p>Qual a diferença de var, let e const?</p>
+          </section>
+          <section id="fragmet">
+            <h2>var,let,const</h2>
+            <p>A inclusão no EC6 do const e let foi para suprir problemas causados pelo uso do 'var', o var sofre o hoisting, de escobo global ou estrito dependendo de onde é declarado.</p>
+          </section>
+          <section id="fragmet">
+            <h2>var,let,const</h2>
+            <p>A variavel var pode ser redeclarada, sem gerar erro e podemos alterar seu valor</p>
+            <span class="fragment"> estas características tornam o var muito conveniente a erros</span>
+          </section>
+          <section id="fragment">
+            <h2>var,let,const</h2>
+            <p>Assim veio o 'let' que usa das propriedades de poder alterar o valor da váriavel, mas sem poder ser redeclarada e sofrer hoisting</p>
+            <p>E o 'const' que como o 'let' não sofre hoisting e não pode ser redeclarada, porém também não pode ter seu valor alterado</p>
+          </section>
+        </section>
+        <section>
+          <section id="fragment">
+            <p>Qual a diferença entre for, forEach e for.. of ?</p>
+          </section>
+          <section id="fragment">
+            <h2>for, forEach e for.. of</h2>
+            <p>As construções for fornecem acesso ao índice do array, não ao elemento real.</p>
+            <pre><code class="javascript" data-trim contenteditable style="font-size: 18px;">
+              for (let i = 0; i < arr.length; ++i) {
+                console.log(arr[i]);
+              }
+              
+              for (let i in arr) {
+                console.log(arr[i]);
+              }
+                          </code></pre>
+          </section>
+          <section id="fragment">
+            <h2>for, forEach e for.. of</h2>
+            <p>Com as outras duas construções, forEach() e for..of, você tem acesso ao próprio elemento do array. Com forEach() você pode acessar o índice do array em i, com for..of você não pode.</p>
+            <pre><code class="javascript" data-trim contenteditable style="font-size: 18px;">
+              for (let i = 0; i < arr.length; ++i) {
+                console.log(arr[i]);
+              }
+              
+              for (let i in arr) {
+                console.log(arr[i]);
+              }
+                          </code></pre>
+            
+          </section>
+          <section id="fragment">
+            <h2>for, forEach e for.. of</h2>
+            <p>O que torna as coisas ainda mais confusas é que as construções em loop tratam ['a',, 'c'] diferentemente de ['a', undefined, 'c']. Abaixo está um exemplo de como as 4 construções de looping lidam com ['a',, 'c'] e seu elemento vazio. for..in e forEach pulam o elemento vazio, for e for..of não:</p>
+            <pre><code class="javascript" data-trim contenteditable style="font-size: 18px;">
+              // Mostra "a, undefined, c"
+              for (let i = 0; i < arr.length; ++i) {
+                console.log(arr[i]);
+              }
+              
+              // Mostra "a, c"
+              arr.forEach(v => console.log(v));
+              
+              // Mostra "a, c"
+              for (let i in arr) {
+                console.log(arr[i]);
+              }
+              
+              // Mostra "a, undefined, c"
+              for (const v of arr) {
+                console.log(v);
+              }
+                          </code></pre>
+            
+          </section>
+          <section id="fragment">
+            <h2>for, forEach e for.. of</h2>
+            <p>forEach não aceita o parametro 'this'</p>
+            <pre><code class="javascript" data-trim contenteditable style="font-size: 18px;">
+              'use strict';
 
-		<link rel="stylesheet" href="dist/reset.css">
-		<link rel="stylesheet" href="dist/reveal.css">
-		<link rel="stylesheet" href="dist/theme/black.css">
+const arr = ['a'];
 
-		<!-- Theme used for syntax highlighted code -->
-		<link rel="stylesheet" href="plugin/highlight/monokai.css">
-	</head>
-	<body>
-		<div class="reveal">
-			<div class="slides">
-				<section>Slide 1</section>
-				<section>Slide 2</section>
-			</div>
-		</div>
+// Mostra "undefined"
+arr.forEach(function() {
+  console.log(this);
+});
+                          </code></pre>
+          </section>
+          <section id="fragment">
+            <h2>for, forEach e for.. of</h2>
+            <p>Outra caso do forEach() é que ele não funciona bem com async/await ou Generators. </p>
+            <p>Exemplos tirados de https://oieduardorabelo.medium.com/javascript-for-vs-foreach-vs-for-in-vs-for-of-44b8beffbfa0</p>
+          </section>
+        </section>
+      </div>
+    </div>
 
-		<script src="dist/reveal.js"></script>
-		<script src="plugin/notes/notes.js"></script>
-		<script src="plugin/markdown/markdown.js"></script>
-		<script src="plugin/highlight/highlight.js"></script>
-		<script>
-			// More info about initialization & config:
-			// - https://revealjs.com/initialization/
-			// - https://revealjs.com/config/
-			Reveal.initialize({
-				hash: true,
+    <script src="dist/reveal.js"></script>
+    <script src="plugin/notes/notes.js"></script>
+    <script src="plugin/markdown/markdown.js"></script>
+    <script src="plugin/highlight/highlight.js"></script>
+    <script>
+      // More info about initialization & config:
+      // - https://revealjs.com/initialization/
+      // - https://revealjs.com/config/
+      Reveal.initialize({
+        hash: true,
 
-				// Learn about plugins: https://revealjs.com/plugins/
-				plugins: [ RevealMarkdown, RevealHighlight, RevealNotes ]
-			});
-		</script>
-	</body>
+        // Learn about plugins: https://revealjs.com/plugins/
+        plugins: [RevealMarkdown, RevealHighlight, RevealNotes],
+      });
+    </script>
+  </body>
 </html>

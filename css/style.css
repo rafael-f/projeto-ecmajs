@@ -1,0 +1,13 @@
+html, body {
+    height: 100%;
+}
+body {
+    padding: 0;
+    margin: 0;
+}
+[lj-type="stage"] {
+    width: 100%;
+    max-width: 800px;
+    height: 400px;
+    margin:auto;
+}

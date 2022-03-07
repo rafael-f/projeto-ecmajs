@@ -1,28 +1,40 @@
-<!DOCTYPE html>
-<html lang="pt-br">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width-divice-width, initial-scale-1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie-edge" />
-    <script src="https://keycdn.layerjs.org/libs/layerjs/layerjs-0.6.4.min.js"></script>
-    <link
-      href="https://keycdn.layerjs.org/libs/layerjs/layerjs-0.6.4.css"
-      type="text/css"
-      rel="stylesheet"
-    />
-    <style rel="stylesheet" href="css/style.css"></style>
-    <title>Slides</title>
-  </head>
-  <body>
-      <div lj-type="stage">
-          <div lj-type="layer">
-              <div lj-type="frame" id="frame1">slide</div>
-              <div lj-type="frame" id="frame2">slide2</div>
-              <div lj-type="frame" id="frame3">slide3</div>
-          </div>
-      </div>
-      <a href="frame1">Frame 1</a>
-      <a href="frame2">Frame 2</a>
-      <a href="frame3">Frame 3</a>
-  </body>
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>reveal.js</title>
+
+		<link rel="stylesheet" href="dist/reset.css">
+		<link rel="stylesheet" href="dist/reveal.css">
+		<link rel="stylesheet" href="dist/theme/black.css">
+
+		<!-- Theme used for syntax highlighted code -->
+		<link rel="stylesheet" href="plugin/highlight/monokai.css">
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+				<section>Slide 1</section>
+				<section>Slide 2</section>
+			</div>
+		</div>
+
+		<script src="dist/reveal.js"></script>
+		<script src="plugin/notes/notes.js"></script>
+		<script src="plugin/markdown/markdown.js"></script>
+		<script src="plugin/highlight/highlight.js"></script>
+		<script>
+			// More info about initialization & config:
+			// - https://revealjs.com/initialization/
+			// - https://revealjs.com/config/
+			Reveal.initialize({
+				hash: true,
+
+				// Learn about plugins: https://revealjs.com/plugins/
+				plugins: [ RevealMarkdown, RevealHighlight, RevealNotes ]
+			});
+		</script>
+	</body>
 </html>

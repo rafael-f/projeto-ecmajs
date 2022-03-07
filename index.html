@@ -266,7 +266,7 @@
         </section>
         <section>
           <section id="fragments">
-            <h2>RECURSOS IMPORTANTES/h2>
+            <h2>RECURSOS IMPORTANTES</h2>
             <p>ECMASCript 10,11,12 e ES.Next</p>
           </section>
           <section id="fragments">
@@ -298,6 +298,7 @@
             <p>Muitas vezes em um código nós erramos na execução e ele não acusa o erro, e continua rodando normalmente.</p>
             <span class="fragment"> E isso não é interessante para nós pois pode gerar um erro num outro local que nem saberiamos</span>
           </section>
+          <section>
           <h2>Strict Mode</h2>
             <p>Usando "use strict"</p>
             <span class="fragment"> colocando "use strict" no começo do nosso arquivo, este modo ativara recurso de falhas adicionais, como declarações faltantes, mudar variaveis de leitura e outros.</span>
@@ -341,6 +342,58 @@
               var meuNome= 'joao';
                           </code></pre>
             <span class="fragment">voltará undefined</span>
+          </section>
+          <section id="fragment">
+            <pre><code class="javascript" data-trim contenteditable style="font-size: 18px;">
+              function catName(name) {
+                console.log("O nome do meu gato é " + name);
+              }
+              
+              catName("Tigger");
+              
+              /*
+              O resultado do código acima é: "O nome do meu gato é Tigger"
+              */
+              
+                          </code></pre>
+          </section>
+          <section id="fragment">
+            <pre><code class="javascript" data-trim contenteditable style="font-size: 18px;">
+              catName("Chloe");
+
+function catName(name) {
+  console.log("O nome do meu gato é " + name);
+}
+/*
+O resultado do código acima é: "O nome do meu gato é Chloe"
+*/
+
+              
+                          </code></pre>
+          </section>
+          <section id="fragment">
+            <pre><code class="javascript" data-trim contenteditable style="font-size: 18px;">
+              //Exemplo 1 - Não eleva (hoist)
+              var x = 1; // Inicializa x
+              console.log(x + " " + y); // '1 undefined'
+              var y = 2; // Initialize y
+              //Isso não funcionará, pois o JavaScript apenas eleva declarações
+              
+              //Example 2 - Hoists
+              var num1 = 3; //Declara e inicializa num1
+              num2 = 4; //Inicializa num2
+              console.log(num1 + " " + num2); //'3 4'
+              var num2; //Declara num2 para hoisting
+              
+              //Example 3 - Hoists
+              a = 'Cran'; //Inicializa a
+              b = 'berry'; //Inicializa b
+              console.log(a + "" + b); // 'Cranberry'
+              var a, b; //Declara ambos a & b para hoisting
+              
+
+              
+                          </code></pre>
           </section>
         </section>
         <section>
